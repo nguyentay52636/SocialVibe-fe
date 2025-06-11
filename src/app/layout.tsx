@@ -1,15 +1,12 @@
-import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/ThemeProvider"
-import "./globals.css"
+import "@/styles/globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SocialVibe - Kết nối và chia sẻ",
-  description: "Mạng xã hội hiện đại cho người Việt",
-  generator: 'v0.dev'
+  title: "Social Vibe",
+  description: "A modern social media platform",
 }
 
 export default function RootLayout({
@@ -18,12 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="vi" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

@@ -15,3 +15,5 @@ bun dev
 ```
 
 Feature-based Folder Structure 
+npm run build
+npm run start

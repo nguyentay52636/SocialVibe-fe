@@ -17,7 +17,9 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Search, Bell, MessageCircle, Settings, LogOut, User, Star, Menu, X } from "lucide-react"
-import { ThemeToggle } from "@/components/ui/theme-toggle"
+import { ThemeToggle } from "@/components/ThemeToggle"
+
+
 
 export function Header() {
     const [searchQuery, setSearchQuery] = useState("")
@@ -67,6 +69,7 @@ export function Header() {
                 <div className="hidden md:flex items-center space-x-4">
                     {/* Theme Toggle */}
                     <ThemeToggle />
+
 
                     {/* Notifications */}
                     <DropdownMenu>
