@@ -5,7 +5,8 @@ import { Users, UserPlus, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Card } from "@/components/ui/card"
-import { FriendSuggestion } from "./types"
+import { FriendSuggestion } from "../types"
+
 
 interface FriendSuggestionsProps {
     suggestions: FriendSuggestion[]
